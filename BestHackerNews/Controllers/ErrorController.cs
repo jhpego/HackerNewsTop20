@@ -37,22 +37,5 @@ namespace BestHackerNews.Controllers
         }
 
 
-
-        [Route("bad")]
-        public HackerStory Bad()
-        {
-            throw new Exception("some exception");
-            return new HackerStory();
-        }
-
-
-        [Route("custom")]
-        public HackerStory Custom()
-        {
-            throw new PrimaryException("some exception");
-            return new HackerStory();
-        }
-
-
     }
 }
